@@ -1,21 +1,31 @@
-.flex-container {
+nav .flex-container {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   margin: 10px;
 }
-.flex-container li {
+nav .flex-container li {
   margin: 10px;
   padding: 10px;
   background-color: #dcc8f5;
+  list-style-type: none;
 }
-.flex-container li a {
+nav .flex-container li a {
   text-decoration: none;
   color: #2d095c;
 }
 
-ul {
-  list-style-type: none;
+#About .flex-container {
+  display: flex;
+}
+#About .flex-container .text {
+  max-width: 500px;
+  margin: 10px;
+}
+#About .flex-container img {
+  max-width: 500px;
+  height: auto;
+  margin: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
