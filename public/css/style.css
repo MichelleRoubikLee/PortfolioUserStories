@@ -17,13 +17,17 @@ nav .flex-container li a {
 
 #About .flex-container {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #About .flex-container .text {
-  max-width: 500px;
+  max-width: 50%;
+  min-width: 100px;
   margin: 10px;
 }
 #About .flex-container img {
-  max-width: 500px;
+  max-width: 50%;
+  min-width: 100px;
   height: auto;
   margin: 10px;
 }

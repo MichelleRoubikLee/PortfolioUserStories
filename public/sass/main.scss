@@ -22,14 +22,19 @@ nav .flex-container{
 
     .flex-container{
         display: flex;
+        justify-content: center;
+        align-items: center;
 
         .text{
-            max-width: 500px;
+            max-width: 50%;
+            min-width:100px;
             margin: 10px;
         }
 
         img{
-            max-width: 500px;
+
+            max-width: 50%;
+            min-width: 100px;
             height: auto;
             margin: 10px;
         } 
