@@ -1,0 +1,23 @@
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 10px;
+
+    li{
+        margin: 10px;
+        padding: 10px;
+        background-color: rgb(220, 200, 245);
+
+        a{
+            text-decoration: none;
+            color: rgb(45, 9, 92);
+        }
+    }
+}
+
+ul{
+    list-style-type:none;
+}
+
+

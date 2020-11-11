@@ -1,0 +1,21 @@
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 10px;
+}
+.flex-container li {
+  margin: 10px;
+  padding: 10px;
+  background-color: #dcc8f5;
+}
+.flex-container li a {
+  text-decoration: none;
+  color: #2d095c;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/*# sourceMappingURL=style.css.map */
