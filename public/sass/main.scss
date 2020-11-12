@@ -1,3 +1,26 @@
+$color-primary-dark: rgb(6, 60, 70);
+$color-primary-dark-opaque: rgb(6, 60, 70, 0.8);
+$color-primary-light: rgb(175, 239, 250);
+$color-white: rgb(220, 247, 252);
+
+$corners: 5px;
+
+body{
+    background-image: url(https://images.unsplash.com/photo-1562575214-da9fcf59b907?ixlib=rb-1.2.1&auto=format&fit=crop&w=666&q=80);
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    color: $color-white;
+}
+
+img{
+    box-shadow: 3px 5px 2px $color-primary-dark-opaque;
+    max-width: 500px;
+    min-width: 100px;
+    height: auto;
+    margin: 20px;
+    overflow: hidden;
+}
+
 nav .flex-container{
     display: flex;
     flex-direction: row;
@@ -7,37 +30,71 @@ nav .flex-container{
     li{
         margin: 10px;
         padding: 10px;
-        background-color: rgb(220, 200, 245);
+        background-color: $color-primary-light;
         list-style-type: none;
+        border-radius: $corners;
 
         a{
             text-decoration: none;
-            color: rgb(45, 9, 92);
+            padding: 5px;
+            color: $color-primary-dark;
+
+            &:hover{
+                background-color: $color-primary-dark;
+                color: $color-primary-light;
+                border-radius: $corners;
+            }
         }
     }
 }
 
-#About{
+#Home{
 
+
+}
+
+#About{
 
     .flex-container{
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
 
         .text{
-            max-width: 50%;
+            max-width: 500px;
             min-width:100px;
-            margin: 10px;
+            padding: 20px;
+            background-color: $color-primary-dark-opaque;
+            border-style: solid;
+            border-color: $color-primary-light;
+            border-radius: $corners;
         }
 
         img{
 
-            max-width: 50%;
-            min-width: 100px;
-            height: auto;
-            margin: 10px;
+
         } 
     }
 } 
+
+#Projects{
+
+    .flex-container{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        img{
+
+        }
+
+    }
+}
+
+#Contact{
+    background-color: $color-primary-dark-opaque;
+
+}
 
