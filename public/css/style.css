@@ -5,6 +5,7 @@ body {
   color: #dcf7fc;
   font-family: "Titillium Web", sans-serif;
   font-size: 20px;
+  text-align: center;
 }
 
 .desc {
@@ -40,17 +41,15 @@ nav .flex-container li a:hover {
 }
 
 #Home .img-container {
-  height: 75vh;
-  width: 75vw;
+  height: 50vh;
+  width: 60vw;
   overflow: hidden;
   margin: auto;
-  position: relative;
 }
 #Home .img-container img {
   height: 100%;
   width: 100%;
   margin: auto;
-  position: absolute;
   object-fit: cover;
 }
 
@@ -100,7 +99,7 @@ nav .flex-container li a:hover {
   overflow: hidden;
   padding: 10px;
   text-align: center;
-  padding-top: 25%;
+  padding-top: 20%;
   opacity: 0;
   transition: 0.3s;
   z-index: 2;
