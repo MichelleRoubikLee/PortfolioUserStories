@@ -3,7 +3,22 @@ $color-primary-dark-opaque: rgba(6, 60, 70, 0.8);
 $color-primary-light: rgb(175, 239, 250);
 $color-white: rgb(220, 247, 252);
 
-$corners: 5px;
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 75em;   // 1200px
+$bp-large: 62.5em;   // 1000px
+$bp-medium: 50em;    // 800px;
+$bp-small: 37.5em;    // 600px;
+
+$corners: .5rem;
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+
+    // @media only screen and (max-width: $bp-largest) {
+    //     font-size: 50%;
+    // }
+}
 
 body{
     background-image: url(https://images.unsplash.com/photo-1562575214-da9fcf59b907?ixlib=rb-1.2.1&auto=format&fit=crop&w=666&q=80);
@@ -11,34 +26,29 @@ body{
     background-size: cover;
     color: $color-white;
     font-family: 'Titillium Web', sans-serif;
-    font-size: 20px;
     text-align: center;
-}
-
-.desc{
-    font-size: 15px;
 }
 
 li{
     list-style-type: none;
 }
 
-
 nav .flex-container{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: flex-end;
-    margin: 10px;
+    margin: 1rem;
 
     li{
-        margin: 10px;
-        padding: 10px;
+        margin: 1rem;
+        padding: 1rem;
         background-color: $color-primary-light;
         border-radius: $corners;
 
         a{
             text-decoration: none;
-            padding: 5px;
+            padding: .5rem;
             color: $color-primary-dark;
             transition: .3s;
 
@@ -144,8 +154,6 @@ nav .flex-container{
 
     }
 
-    
-
     li:last-child {
         flex-grow: 10;
     }
@@ -157,3 +165,20 @@ nav .flex-container{
 
 }
 
+//helper classes
+.title{
+
+    &--1{
+        font-size: 3rem;
+    }
+
+    &--2{
+        font-size: 2rem;
+    }
+    
+}
+
+
+.desc{
+    font-size: 1.8rem;
+}
