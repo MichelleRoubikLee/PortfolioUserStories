@@ -1,13 +1,13 @@
 $color-primary-dark: rgb(6, 60, 70);
-$color-primary-dark-opaque: rgba(6, 60, 70, 0.8);
+$color-primary-dark-opaque: rgba(6, 60, 70, 0.9);
 $color-primary-light: rgb(175, 239, 250);
 $color-white: rgb(220, 247, 252);
 
-// RESPONSIVE BREAKPOINTS
-$bp-largest: 75em;   // 1200px
-$bp-large: 62.5em;   // 1000px
-$bp-medium: 50em;    // 800px;
-$bp-small: 37.5em;    // 600px;
+// // RESPONSIVE BREAKPOINTS
+// $bp-largest: 75em;   // 1200px
+// $bp-large: 62.5em;   // 1000px
+// $bp-medium: 50em;    // 800px;
+// $bp-small: 37.5em;    // 600px;
 
 $corners: .5rem;
 
@@ -42,9 +42,16 @@ nav .flex-container{
 
     li{
         margin: 1rem;
-        padding: 1rem;
+        padding: .5rem;
         background-color: $color-primary-light;
         border-radius: $corners;
+        transition: .3s;
+
+        &:hover{
+            background-color: $color-primary-dark;
+            color: $color-primary-light;
+            border-radius: $corners;
+        }
 
         a{
             text-decoration: none;
@@ -53,9 +60,7 @@ nav .flex-container{
             transition: .3s;
 
             &:hover{
-                background-color: $color-primary-dark;
                 color: $color-primary-light;
-                border-radius: $corners;
             }
         }
     }
@@ -75,7 +80,6 @@ nav .flex-container{
             object-fit: cover;
         }
     }
-
 }
 
 #About{
@@ -88,7 +92,8 @@ nav .flex-container{
 
         .text{
             max-height: fit-content;
-            max-width: 38vw;
+            text-align: left;
+            width: 40vw;
             padding: 1vw;
             margin: 5vh;
             background-color: $color-primary-dark-opaque;
@@ -98,8 +103,8 @@ nav .flex-container{
         }
 
         img{
-            height: auto;
-            width: 40vw;
+            height: 90vh;
+            width: auto;
             margin: 5vh;
 
         } 
@@ -180,5 +185,5 @@ nav .flex-container{
 
 
 .desc{
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }

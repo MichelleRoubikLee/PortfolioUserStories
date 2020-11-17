@@ -25,8 +25,14 @@ nav .flex-container {
 }
 nav .flex-container li {
   margin: 1rem;
-  padding: 1rem;
+  padding: 0.5rem;
   background-color: #afeffa;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+}
+nav .flex-container li:hover {
+  background-color: #063c46;
+  color: #afeffa;
   border-radius: 0.5rem;
 }
 nav .flex-container li a {
@@ -36,9 +42,7 @@ nav .flex-container li a {
   transition: 0.3s;
 }
 nav .flex-container li a:hover {
-  background-color: #063c46;
   color: #afeffa;
-  border-radius: 0.5rem;
 }
 
 #Home .img-container {
@@ -62,17 +66,18 @@ nav .flex-container li a:hover {
 }
 #About .flex-container .text {
   max-height: fit-content;
-  max-width: 38vw;
+  text-align: left;
+  width: 40vw;
   padding: 1vw;
   margin: 5vh;
-  background-color: rgba(6, 60, 70, 0.8);
+  background-color: rgba(6, 60, 70, 0.9);
   border-style: solid;
   border-color: #afeffa;
   border-radius: 0.5rem;
 }
 #About .flex-container img {
-  height: auto;
-  width: 40vw;
+  height: 90vh;
+  width: auto;
   margin: 5vh;
 }
 
@@ -120,7 +125,7 @@ nav .flex-container li a:hover {
 }
 
 #Contact {
-  background-color: rgba(6, 60, 70, 0.8);
+  background-color: rgba(6, 60, 70, 0.9);
   text-align: center;
 }
 
@@ -132,7 +137,7 @@ nav .flex-container li a:hover {
 }
 
 .desc {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 /*# sourceMappingURL=style.css.map */
